@@ -1,4 +1,4 @@
-# Project Morse Code
+# Project Morse Code .--..-.---.---.-.-.- -----.-..... -.-.----...
 
 ## Morse Code
 
@@ -24,7 +24,7 @@ Welcome to Morse Code, a mini-project focused on converting input text into Mors
 
 ## Deployment
 
-Check out the live demo on Netlify: Morse Code on Netlify
+Check out the live demo on Netlify: [Morse Code on Netlify](https://mini-morse-encoder.netlify.app/)
 
 ## Getting Started
 
@@ -32,10 +32,8 @@ To get started with this project, follow these steps:
 
 - Clone the repository:
 
-sh
-
 ```
-git clone https://github.com/yourusername/morse-code.git
+git clone git@github.com:sharonVko/Project-Morse_Code.git
 ```
 
 Navigate to the project directory:

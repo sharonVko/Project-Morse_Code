@@ -49,11 +49,17 @@ let morseAlphabet = [
 ];
 
 encryptBtn?.addEventListener('click', () => {
- const text2encrypt = textInput.value.toUpperCase()
-console.log(text2encrypt);
-//for each?
-// empty input?
+  morseOutput.innerHTML = "";
+  let text2encrypt:string = textInput.value.toUpperCase();
+  console.log(text2encrypt);
+  let inputLettersArray:string [] = text2encrypt.split(""); // split text into single letters, save in array
 
+  let morseMatchArray:string [] = inputLettersArray.map((singleLetter:string):string => { //for conversion
+    let morseEncryption = morseAlphabet.find((morseLetter) => morseLetter.letter === singleLetter);
+
+    return morseEncryption ? morseEncryption.morseCode : ''; // check if morseEncryption exists, else return empty string
+  })
+    morseOutput.innerHTML = morseMatchArray.join(''); //connecting each letter of this array into a string & showing in html
 });
 
-//Sorry, will finish soon! 
+
